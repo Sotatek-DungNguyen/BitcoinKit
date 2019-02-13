@@ -25,8 +25,8 @@
 import Foundation
 
 public class AddressType {
-    public static let pubkeyHash: AddressType = PubkeyHash()
-    public static let scriptHash: AddressType = ScriptHash()
+    static let pubkeyHash: AddressType = PubkeyHash()
+    static let scriptHash: AddressType = ScriptHash()
 
     var versionByte: UInt8 { return 0 }
     var versionByte160: UInt8 { return versionByte + 0 }
